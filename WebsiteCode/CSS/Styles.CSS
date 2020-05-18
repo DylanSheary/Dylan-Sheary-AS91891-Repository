@@ -1,0 +1,91 @@
+/* HTML Stylesheet */ /* DylanBebbingtonSheary | dylan.sheary@student.hhs.school.nz */
+/* Google Fonts Imports: */
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+/* Styles */
+
+    /* To acheive my intended effect of a gradient surrounding another gradient, having an empty text box (with the new gradient as its border) with margiannally larger proportions than the text box it surrounds is required. The empty text box is listed under an h3 tag. */
+    
+    h1 {
+    font-family: 'Damion', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    text-decoration: none;
+    /* A text shadow like this, one that has repeated shadows around the lettering, acheives an outline effect. */
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    background-color: grey;
+    padding: 7px;
+    border-radius: 7px;
+    width: 350px;
+    height: 60px;
+    margin: auto;
+    background-image: -webkit-linear-gradient(to right, black, white);
+    background-image: -moz-linear-gradient(to right, black, white);
+    background-image: -o-linear-gradient(to right, black, white);
+    background-image: linear-gradient(to right, black, white);  
+    opacity: 50%;
+    }
+
+    nav {
+
+    }
+
+    body {
+    /* This background gradient is heavily based on a public domain background gradient which was supplied and shared by Atle Mo (design) and Sébastien Grosjean (code) */
+    background:
+        linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #1c1c1c 10px, transparent 10px),
+        linear-gradient(#1c1c1c 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    text-align: center;
+    }
+
+    h2 {
+    font-family: 'Jim Nightshade', sans-serif;
+    text-decoration: none;
+    background-color: grey;
+    border: 5px linear-gradient(bottom, black, white);
+    width: 250px;
+    text-shadow: 0 1px 0 white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin: auto;
+    background-image: -webkit-linear-gradient(bottom, black, white);
+    background-image: -moz-linear-gradient(bottom, black, white);
+    background-image: -o-linear-gradient(bottom, black, white);
+    background-image: linear-gradient(to top, black, white);  
+    opacity: 50%;
+    /* A text shadow like this, one that has repeated shadows around the lettering, acheives an outline effect. */
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    }
+
+    h3 {
+    padding: 7px;
+    border-radius: 7px;
+    width: 350px;
+    height: 60px;
+    margin: auto;
+    background-image: -webkit-linear-gradient(to left, black, white);
+    background-image: -moz-linear-gradient(to left, black, white);
+    background-image: -o-linear-gradient(to left, black, white);
+    background-image: linear-gradient(to left, black, white);  
+    opacity: 50%;
+    }
+
+    section {
+
+    }
+
+    footer {
+
+    }
