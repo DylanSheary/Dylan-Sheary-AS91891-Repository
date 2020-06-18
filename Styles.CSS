@@ -1,0 +1,291 @@
+/* HTML Stylesheet */ /* DylanBebbingtonSheary | dylan.sheary@student.hhs.school.nz */
+/* Google Fonts Imports: */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+
+/* Site Styles */
+
+
+    body {
+    /* This background gradient is very heavily based on a public domain background gradient which was supplied and shared by Atle Mo (design) and Sébastien Grosjean (code) */
+    background:
+        linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #1c1c1c 10px, transparent 10px),
+        linear-gradient(#1c1c1c 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    text-align: center;
+    }
+
+    
+    /* To achieve my intended effect of a gradient surrounding another gradient, I need a text affecting div surrounded by a div which is also surrounded by a div. The first text affecting div is #titlestyle, divs are #grad1 and #grad2, seen further below. I use this same coding strategy multiple times to achieve a very similar effect with different dimensions throughout my site. */
+
+
+    /* Title Text Style div */
+    #titlestyle {    
+    font-family: 'Dancing Script', cursive;
+    font-size: 52px;
+    /* A text shadow like this, one that has repeated shadows around the lettering, achieves an outline effect. */
+    text-shadow: 1.3px 0 0 #f8fcff, -1.3px 0 0 #f8fcff, 0 1.3px 0 #f8fcff, 0 -1.3px 0 #f8fcff, 0.725px 0.725px #f8fcff, -0.725px -0.725px 0 #f8fcff, 0.725px -0.725px 0 #f8fcff, -0.725px 0.725px 0 #f8fcff;
+    padding: 20px;
+    }
+    
+    /* Title Section Internal Gradient */
+    #grad1 {
+    opacity: 95%;
+    background-image: -webkit-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to right, #151926, #f8fcff);
+    background-image: linear-gradient(to right, #151926, #f8fcff);
+    width: 350px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 18.5px;
+    margin: auto;
+    }
+
+    /* Title Section Exterior Border Gradient */
+    #grad2 {
+    opacity: 65%;
+    background-image: -webkit-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to left, #151926, #f8fcff);
+    background-image: linear-gradient(to left, #151926, #f8fcff);
+    width: 350px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 18.5px;
+    margin: auto;
+    padding-top: 7px;
+    padding-bottom: 37px;
+    padding-left: 8px;
+    padding-right: 36px;
+    border-collapse: separate;
+    border-spacing: 150px 500px;
+    }
+
+    /* Navigation Style */
+    #mainnav {
+    font-family: 'Amita', cursive;
+    font-size: 32px;
+    }
+    
+    /* Navigation Section Internal Gradient */
+    #grad3 {
+    opacity: 65%;
+    background-image: -webkit-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to left, #151926, #f8fcff);
+    background-image: linear-gradient(to left, #151926, #f8fcff);
+    width: 945px;
+    height: 61.5px;
+    padding: 8px;
+    border-radius: 18.5px;
+    margin: auto;
+    }
+    
+    /*  Navigation Section Exterior Border Gradient */
+    #grad4 {
+    opacity: 95%;
+    background-image: -webkit-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to right, #1519z26, #f8fcff);
+    background-image: -o-linear-gradient(to right, #151926, #f8fcff);
+    background-image: linear-gradient(to right, #151926, #f8fcff);
+    width: 948px;
+    height: 60px;
+    padding: 3px;
+    border-radius: 18.5px;
+    margin: auto;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 0px;
+    border-collapse: separate;
+    border-spacing: 150px 500px;
+    }
+    
+    /* These two style editors make my anchor tags inverse their colour schemes and increase in size when hovered over. This is necessary, as links need to stand out to the reader (that being the reason standard links are blue). This inversing and boldness effect is very noticeable, but doesn't clash with my colour scheme like how blue coloured text would. */
+    a {
+    color: black;
+    text-decoration-color: #1c1c1c;
+     text-shadow: 1px 0 0 #f8fcff, -1px 0 0 #f8fcff, 0 1px 0 #f8fcff, 0 -1px 0 #f8fcff, 0.5px 0.5px #f8fcff, -0.5px -1px 0 #f8fcff, 0.5px -0.5px 0 #f8fcff, -0.5px 0.5px 0 #f8fcff;   
+    }
+
+    a:hover {
+    font-size: 32.5px;
+    color: #f8fcff;
+    text-shadow: 2px 0 0 #1c1c1c, -2px 0 0 #1c1c1c, 0 2px 0 #1c1c1c, 0 -2px 0 #1c1c1c, 1px 1px #1c1c1c, -1px -2px 0 #1c1c1c, 1px -1px 0 #1c1c1c, -1px 1px 0 #1c1c1c;
+    }
+    
+    /* Main Section Style & Gradient */
+    section {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 19px;
+    text-align: center;
+    position: relative;
+    text-shadow: 0.7px 0 0 #f8fcff, -0.7px 0 0 #f8fcff, 0 0.7px 0 #f8fcff, 0 -0.7px 0 #f8fcff, 0.4px 0.4px #f8fcff, -0.4px -0.7px 0 #f8fcff, 0.4px -0.4px 0 #f8fcff, -0.4px 0.4px 0 #f8fcff;        
+    }
+    
+    /* Main Text Section Internal Gradient */
+    #grad5 {
+    opacity: 65%;
+    background-image: -webkit-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to left, #151926, #f8fcff);
+    background-image: linear-gradient(to left, #151926, #f8fcff);
+    width: 728px;
+    height: 385.5px;
+    padding: 11.5px;
+    border-radius: 18.5px;
+    margin: auto;
+    }
+
+    /* Main Text Section Exterior Border Gradient */
+    #grad6 {
+    opacity: 95%;
+    background-image: -webkit-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to right, #151926, #f8fcff);
+    background-image: linear-gradient(to right, #151926, #f8fcff);
+    width: 730px;
+    height: 385px;
+    padding: 15px;
+    border-radius: 18.5px;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 0px;
+    border-collapse: separate;
+    border-spacing: 150px 500px;
+    }
+    
+    /* As my History & Impact and Contact page both need unique dimension text sections, those .HTML files use two out of four of these files instead of #grad5 and #grad6. Each of these unique divs have the exact dimensions required for their corresponding page. */
+    /* History & Impact Main Text Section Internal Gradient */
+    #historyimpactgrad1 {
+    opacity: 65%;
+    background-image: -webkit-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to left, #151926, #f8fcff);
+    background-image: linear-gradient(to left, #151926, #f8fcff);
+    width: 728px;
+    height: 439.5px;
+    padding: 11.5px;
+    border-radius: 18.5px;
+    margin: auto;
+    }
+    
+    /* History & Impact Main Text Section Exterior Border Gradient */
+    #historyimpactgrad2 {
+    opacity: 95%;
+    background-image: -webkit-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to right, #151926, #f8fcff);
+    background-image: linear-gradient(to right, #151926, #f8fcff);
+    width: 730px;
+    height: 439px;
+    padding: 15px;
+    border-radius: 18.5px;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 0px;
+    border-collapse: separate;
+    border-spacing: 150px 500px;
+    }
+    
+    /* Contact Main Text Section Internal Gradient */
+    #contactgrad1 {
+    opacity: 65%;
+    background-image: -webkit-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to left, #151926, #f8fcff);
+    background-image: linear-gradient(to left, #151926, #f8fcff);
+    width: 728px;
+    height: 685.5px;
+    padding: 11.5px;
+    border-radius: 18.5px;
+    margin: auto;
+    }
+    
+    /* Contact Main Text Section Exterior Border Gradient */
+    #contactgrad2 {
+    opacity: 95%;
+    background-image: -webkit-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to right, #151926, #f8fcff);
+    background-image: linear-gradient(to right, #151926, #f8fcff);
+    width: 730px;
+    height: 685px;
+    padding: 15px;
+    border-radius: 18.5px;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 0px;
+    border-collapse: separate;
+    border-spacing: 150px 500px;
+    }
+
+    /* This fixes a large error to do with the iframe's border appearance by making it invisible. */
+    iframe {
+    border: 0px;    
+    }
+
+    /* Footer Section Text Style */
+    footer {
+    font-family: 'Amita', cursive;
+    font-size: 17px;
+    text-shadow: 1px 0 0 #f8fcff, -1px 0 0 #f8fcff, 0 1px 0 #f8fcff, 0 -1px 0 #f8fcff, 0.5px 0.5px #f8fcff, -0.5px -1px 0 #f8fcff, 0.5px -0.5px 0 #f8fcff, -0.5px 0.5px 0 #f8fcff;
+    }
+
+    /* This section fixes my footer section to follow the user throughout the page and stays fixed near the bottom. */
+    .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    }
+
+    /* Footer Section Background Gradients */
+    /* Footer Section Internal Gradient */
+    #grad7 {
+    opacity: 65%;
+    background-image: -webkit-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to left, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to left, #151926, #f8fcff);
+    background-image: linear-gradient(to left, #151926, #f8fcff);
+    width: 348px;
+    height: 30px;
+    padding: 8.5px;
+    border-radius: 18.5px;
+    margin: auto;
+    }
+
+    /* Footer Section Exterior Border Gradient */
+    #grad8 {
+    opacity: 95%;
+    background-image: -webkit-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -moz-linear-gradient(to right, #151926, #f8fcff);
+    background-image: -o-linear-gradient(to right, #151926, #f8fcff);
+    background-image: linear-gradient(to right, #151926, #f8fcff);
+    width: 350px;
+    height: 30px;
+    padding: 15px;
+    border-radius: 18.5px;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 1.2px;
+    padding-left: 1px;
+    padding-right: 0px;
+    border-collapse: separate;
+    border-spacing: 150px 500px;
+    }
